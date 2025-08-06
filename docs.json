@@ -16,23 +16,26 @@
           {
             "tab": "Consolas UNIDEX",
             "anchors": [
-              {
+                {
                 "anchor": "UX24",
                 "icon": "book-open",
                 "description": "Consola UX24",
-                "pages": [
-                  "es/unidex/UNIDEX-introduccion",
-                  "es/unidex/ux24-resumen"
-                ],
                 "groups": [
-                    {
-  "group": "CABLEADO",
-  "pages": [
-    "es/unidex/UNIDEX-instalacion-cableado_estructurado",
-    "es/unidex/UNIDEX-instalacion-cableado-kits",
-    "es/unidex/UNIDEX-instalacion-RJ45-pinout"
-  ]
-},
+                  {
+                   "group": "INTRODUCCIÓN",
+                    "pages": [
+                      "es/unidex/ux24-introduccion",
+                      "es/unidex/ux24-resumen"
+                    ]
+                  },
+                  {
+                    "group": "CABLEADO",
+                    "pages": [
+                      "es/unidex/UNIDEX-instalacion-cableado_estructurado",
+                      "es/unidex/UNIDEX-instalacion-cableado-kits",
+                      "es/unidex/UNIDEX-instalacion-RJ45-pinout"
+                    ]
+                  },
                   {
                         "group": "INSTALACION",
                         "pages": [
