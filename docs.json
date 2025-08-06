@@ -22,7 +22,7 @@
                 "description": "Consola UX24",
                 "groups": [
                     {
-  "group": "Cableado",
+  "group": "CABLEADO",
   "pages": [
     "es/unidex/UNIDEX-instalacion-cableado_estructurado",
     "es/unidex/UNIDEX-instalacion-cableado-kits",
