@@ -35,8 +35,8 @@
                             "es/unidex/ux24-instalacion-panel",
                             "es/unidex/ux24-instalacion-gpio",
                             "es/unidex/ux24-instalacion-onoff"
-  ]
-},
+                        ]
+                    },
                     {
     					"group": "ADAPTADORES UNIDEX",
     					"pages": [
