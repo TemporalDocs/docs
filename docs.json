@@ -22,21 +22,19 @@
                 "description": "Consola UX24",
                 "groups": [
                     {
-  "group": "INSTALACION",
-  "groups": [
-    {
-      "group": "Cableado",
-      "pages": [
-        "es/unidex/UNIDEX-instalacion-cableado_estructurado",
-        "es/unidex/UNIDEX-instalacion-cableado-kits",
-        "es/unidex/UNIDEX-instalacion-RJ45-pinout"
-      ]
-    }
-  ],
+  "group": "Cableado",
   "pages": [
-    "es/unidex/ux24-instalacion-panel",
-    "es/unidex/ux24-instalacion-gpio",
-    "es/unidex/ux24-instalacion-onoff"
+    "es/unidex/UNIDEX-instalacion-cableado_estructurado",
+    "es/unidex/UNIDEX-instalacion-cableado-kits",
+    "es/unidex/UNIDEX-instalacion-RJ45-pinout"
+  ]
+},
+                  {
+                        "group": "INSTALACION",
+                        "pages": [
+                            "es/unidex/ux24-instalacion-panel",
+                            "es/unidex/ux24-instalacion-gpio",
+                            "es/unidex/ux24-instalacion-onoff"
   ]
 },
                     {
