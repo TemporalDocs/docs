@@ -3,7 +3,7 @@ title: "Puertos Ethernet"
 description: "Puertos para Control Remoto y Streaming"
 ---
 
-## Conexión a la LAN (control remoto)
+## Conexión Ethernet para control remoto
 
 La consola cuenta con un **puerto Ethernet** para control remoto a través de red local (LAN).  La **interfaz de control web interna** se accede con un navegador web desde cualquier computadora conectada a la misma red.
 
@@ -12,36 +12,67 @@ La consola cuenta con un **puerto Ethernet** para control remoto a través de re
 Conecte el puerto **ETHERNET de control** de UNIDEX a una boca del **router**, utilizando un cable de red Ethernet estándar.
 
 <Warning>
-  No confunda el conector Ethernet para **CONTROL** con el puerto Ethernet para **STREAMING**.
+  No confundir el conector Ethernet para **CONTROL** con el puerto Ethernet para **STREAMING**.
+
+  <img
+    src="/images/ux24/trasero-control.jpg"
+    alt="Trasero Control Jp"
+    title="Trasero Control Jp"
+    className="mx-auto"
+    style={{ width:"45%" }}
+  />
 </Warning>
 
 - De fábrica, UX24 está configurada en modo **DHCP activado**.
-- El router asignará automáticamente una dirección IP disponible.
-- Esta IP puede cambiar al reiniciar la consola, salvo que se configure una IP fija.
-- Para asignar una IP estática, ingresar en:\
-  `SETTINGS → SYSTEM`
+- El router asignará automáticamente una dirección IP disponible. Esta IP puede cambiar al reiniciar la consola, salvo que se configure una IP fija, pero normalmente esto no es necesario.
 - La dirección IP actual se muestra en la **pantalla principal** de la consola, bajo el nombre:\
-  **UNIDEX IP**
+  **UNIDEX IP.**
 
-<Info>
-  Si no se tiene acceso físico a la consola, se puede utilizar la herramienta **Solidyne Multi-Discovery**, que detecta dispositivos Solidyne conectados a la red.\
-  Descargar desde: http://www.solidynepro.com/DW/IP.exe\\\\\\\\
-  Seleccionar el tipo de dispositivo en el menú **PROTOCOLO**.
-</Info>
+  <img
+    src="/images/ux24/unidex-ControlIP.png"
+    alt="RJ45 a RCA"
+    style={{ width:"47%" }}
+    title=""
+    className="mx-auto"
+  />
+- Si se requiere asignar una IP estática, ingresar en:`SETTINGS → SYSTEM`
 
----
-
-### Paso 2: Acceso desde navegador web
+### **P**aso 2: Acceso desde navegador web
 
 Desde cualquier computadora conectada a la **misma red local** (por cable o Wi-Fi), abrir un navegador web (recomendado: **Google Chrome**) e ingresar la dirección IP mostrada como **UNIDEX IP**.
 
-<img
-  src="/images/ux24/unidex-ControlIP.png"
-  alt="RJ45 a RCA"
-  style={{ maxWidth:"300px",height:"auto",marginBottom:"1rem" }}
-  title=""
-/>
-
 Esto abrirá la interfaz web de operación y configuración de la consola. La interfaz es similar a la que se muestra en la **pantalla táctil a bordo**.
 
-> _____Las herramientas de streaming se acceden desde la dirección STREAM IP._____
+<Info>
+  Si no se tiene acceso físico a la consola, se puede utilizar la herramienta **Solidyne Multi-Discovery**, que detecta dispositivos Solidyne conectados a la red.
+
+  \
+  Descargar desde: https://www.solidynepro.com/DW/IP.exe
+
+  Seleccionar el tipo de dispositivo en el menú **PROTOCOLO**.
+</Info>
+
+<Icon icon="link" iconType="solid" color="#000FFF" size={22} />  Ver [acceso y uso de la interfaz de control web](/es/unidex/ux24-remote-interfaz)
+
+---
+
+## Conexión Ethernet para servicios de streaming
+
+1. Conectar el puerto **Streaming Out** al router de la LAN mediante un cable Ethernet.
+
+   <Warning>
+     NO CONFUNDIR el **conector Ethernet de streaming** con el conector Ethernet de **control remoto**.\
+     Ambos usan RJ45, pero cumplen funciones totalmente distintas.
+
+     <img
+       src="/images/ux24/trasero-streaming.jpg"
+       alt="Trasero Streaming Jp"
+       title="Trasero Streaming Jp"
+       style={{ width:"45%" }}
+       className="mx-auto"
+     />
+   </Warning>
+2. El router asignará una dirección IP por **DHCP**, visible en la pantalla principal como: **Stream IP**
+3. La configuración de los servicios de streaming puede realizarse de dos formas:
+   - Desde la **pantalla táctil** de la consola.
+   - Desde cualquier computadora en la red, accediendo a la dirección **Stream IP** desde un navegador web.
