@@ -37,23 +37,23 @@
                     ]
                   },
                   {
-                        "group": "INSTALACION",
-                        "pages": [
-                            "es/unidex/ux24-instalacion-trasero",
-                            "es/unidex/ux24-instalacion-entradas",
-                            "es/unidex/ux24-instalacion-salidas",
-                            "es/unidex/ux24-instalacion-usb",
-                            "es/unidex/ux24-instalacion-red",
-                            "es/unidex/ux24-instalacion-gpio"
-                        ]
+                    "group": "INSTALACION",
+                    "pages": [
+                      "es/unidex/ux24-instalacion-trasero",
+                      "es/unidex/ux24-instalacion-entradas",
+                      "es/unidex/ux24-instalacion-salidas",
+                      "es/unidex/ux24-instalacion-usb",
+                      "es/unidex/ux24-instalacion-red",
+                      "es/unidex/ux24-instalacion-gpio"
+                     ]
                     },
                     {
-    					"group": "ADAPTADORES UNIDEX",
-    					"pages": [
-    						"es/unidex/UNIDEX-adaptadores",
-                            "es/unidex/UDX-2MIC",
-                            "es/unidex/UDX-2TEL"
-    					]
+    				"group": "ADAPTADORES UNIDEX",
+    				"pages": [
+        				"es/unidex/UNIDEX-adaptadores",
+                        "es/unidex/UDX-2MIC",
+                        "es/unidex/UDX-2TEL"
+            			]
     				},
                     {
       					"group": "MONITOREO",

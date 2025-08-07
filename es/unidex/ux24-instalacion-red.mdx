@@ -2,3 +2,46 @@
 title: "Puertos Ethernet"
 description: "Puertos para Control Remoto y Streaming"
 ---
+
+## Conexión a la LAN (control remoto)
+
+La consola cuenta con un **puerto Ethernet** para control remoto a través de red local (LAN).  La **interfaz de control web interna** se accede con un navegador web desde cualquier computadora conectada a la misma red.
+
+### Paso 1: Conexión física
+
+Conecte el puerto **ETHERNET de control** de la consola a una boca del **router LAN**, utilizando un cable Ethernet estándar.
+
+<Warning>
+  No confunda el conector Ethernet para **CONTROL** con el puerto Ethernet para **STREAMING**.
+</Warning>
+
+<img
+  src="/images/ux24/unidex-ControlIP.png"
+  alt="RJ45 a RCA"
+  style={{ maxWidth:"300px",height:"auto",marginBottom:"1rem" }}
+  title=""
+/>
+
+- De fábrica, UX24 está configurada en modo **DHCP activado**.
+- El router asignará automáticamente una dirección IP disponible.
+- Esta IP puede cambiar al reiniciar la consola, salvo que se configure una IP fija.
+- Para asignar una IP estática, ingresar en:\
+  `SETTINGS → SYSTEM`
+- La dirección IP actual se muestra en la **pantalla principal** de la consola, bajo el nombre:\
+  **UNIDEX IP**
+
+<Info>
+  Si no se tiene acceso físico a la consola, se puede utilizar la herramienta **Solidyne Multi-Discovery**, que detecta dispositivos Solidyne conectados a la red.\
+  Descargar desde: http://www.solidynepro.com/DW/IP.exe\\
+  Seleccionar el tipo de dispositivo en el menú **PROTOCOLO**.
+</Info>
+
+---
+
+### Paso 2: Acceso desde navegador web
+
+Desde cualquier computadora conectada a la **misma red local** (por cable o Wi-Fi), abrir un navegador web (recomendado: **Google Chrome**) e ingresar la dirección IP mostrada como **UNIDEX IP**.
+
+Esto abrirá la interfaz web de operación y configuración de la consola. La interfaz es similar a la que se muestra en la **pantalla táctil a bordo**.
+
+> Las herramientas de **streaming** se acceden desde la dirección **STREAM IP**.
