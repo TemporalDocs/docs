@@ -39,9 +39,12 @@
                   {
                         "group": "INSTALACION",
                         "pages": [
-                            "es/unidex/ux24-instalacion-panel",
-                            "es/unidex/ux24-instalacion-gpio",
-                            "es/unidex/ux24-instalacion-onoff"
+                            "es/unidex/ux24-instalacion-trasero",
+                            "es/unidex/ux24-instalacion-entradas",
+                            "es/unidex/ux24-instalacion-salidas",
+                            "es/unidex/ux24-instalacion-usb",
+                            "es/unidex/ux24-instalacion-red",
+                            "es/unidex/ux24-instalacion-gpio"
                         ]
                     },
                     {
