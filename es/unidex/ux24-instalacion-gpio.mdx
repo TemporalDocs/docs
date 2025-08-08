@@ -1,7 +1,9 @@
 ---
-title: "GPIO"
+title: "GPIO y Tally Light"
 description: "Control de dispositivos externos vía GPIO"
 ---
+
+## Control por GPIO
 
 El conector **GPIO** _(General Purpose Input/Output)_ ofrece 4 entradas y 8 salidas que permiten controlar funciones de la consola (GPI) como la activación de mic; o controlar dispositivos externos (GPO) como luces de señalización o el procesado de audio.
 
@@ -65,11 +67,34 @@ El siguiente ejemplo muestra la conexión de un **pulsador momentáneo** para ac
   style={{ width:"52%" }}
 />
 
+En este caso:
 
-  En este caso:
-
-  - **GPO 8** se configura como salida fija de **12 V** (alimentación).
-  - **GPI 1** se configura con la acción **MUTE** y se asocia al canal deseado.
-
+- **GPO 8** se configura como salida fija de **12 V** (alimentación).
+- **GPI 1** se configura con la acción **MUTE** y se asocia al canal deseado.
 
 Durante el silencio activado por GPI, si el operador **mueve el fader manualmente**, la consola le devuelve el control, y el micrófono vuelve al aire automáticamente.
+
+## Luces de señalización "EN EL AIRE"
+
+En el panel trasero de la consola se encuentran **dos salidas de 12 V / 250 mA** para conexión de luces de señalización **“EN EL AIRE”**, correspondientes a los estudios **A** y **B**.
+
+- Se pueden conectar hasta **dos luces de aire Solidyne LA100** por salida.
+- Para luces de otras marcas, asegúrese de que el consumo total **no supere los 250 mA**.
+
+Además:
+
+- La salida **GPO 8** también entrega **12 V / 250 mA**.\
+  Puede configurarse para **accionarse junto a cualquiera de las salidas Tally Light **A o B según necesidad.
+
+Opcionalmente, las salidas **GPO 1 a 7** pueden utilizarse para controlar **luces individuales de micrófono**.
+
+<Warning>
+  Las salidas de luz de aire están protegidas por un componente **PTC (fusistor)** que actúa por temperatura.\
+  Si la corriente excede los **250 mA**, la salida se desconecta automáticamente para proteger la consola.
+
+  Para restablecer la salida:
+
+  1. Desconectar la carga (la luz).
+  2. Revisar el sistema para identificar la causa del sobreconsumo (ej. exceso de LEDs o cortocircuito).
+  3. Esperar a que el PTC se enfríe antes de reconectar.
+</Warning>
