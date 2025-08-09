@@ -1,4 +1,40 @@
 ---
-title: "UDX-2TEL"
-description: "Description of your new file."
+title: "UDX 2TEL"
+description: "Híbrido telefónico de dos líneas (POTS)"
 ---
+
+## Resúmen
+
+La expansión **UDX 2TEL** permite conectar **dos líneas telefónicas terrestres** y sus teléfonos asociados.
+
+- **UDX 2TEL-P**\
+  Incluye controles que permiten **tomar la línea** y **transferirla a la consola**.\
+  Esto permite instalar la unidad y los teléfonos asociados en ubicaciones alejadas de la consola, como una oficina de producción.
+- **UDX 2TEL**\
+  No dispone de controles a bordo.\
+  Está diseñado para que las llamadas sean siempre atendidas por el operador desde la consola.
+
+Todas las funciones de comunicación (discar, atender, poner en espera, dialogar en previo) se operan **desde la consola**.\
+Cada línea telefónica funciona de forma **independiente** sobre un canal.
+
+---
+
+## Conexión de UDX 2TEL
+
+La conexión se realiza con dos cables estándar **STP RJ45–RJ45** conectados **pin a pin** (modelos Solidyne **SOL-P50** o **SOL-P25**).
+
+- **Salida “TO UNIDEX INPUT”** → Conectar a una **entrada UNIDEX** (1 a 4)
+- **Entrada “FROM UNIDEX OUTPUT”** → Conectar a una **salida analógica no balanceada** (5 a 8)
+
+<Info>
+  En el panel posterior de la consola, las entradas **UNIDEX 1, 2, 3 y 4** están alineadas con las salidas no balanceadas **5, 6, 7 y 8**, para simplificar el cableado.
+</Info>
+
+### Correspondencia entrada/salida recomendada
+
+| Entrada UNIDEX | Salida no balanceada |
+| -------------: | -------------------- |
+| UNIDEX 1       | UNBAL 5              |
+| UNIDEX 2       | UNBAL 6              |
+| UNIDEX 3       | UNBAL 7              |
+| UNIDEX 4       | UNBAL 8              |
